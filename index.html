@@ -137,7 +137,7 @@
     </section>
 
     <!-- Testimonial /  -->
-   <!--  <section class="testimonial">
+    <!-- <section class="testimonial">
         <div class="heading">
             <h2>Testimonial</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -218,12 +218,13 @@
         window.addEventListener('scroll', function (){
             var header = document.querySelector('header')
             header.classList.toggle('sticky', window.scrollY > 0);
-        })
+        });
 
         function toggleMenu(){
             var menuToggle = document.querySelector('.toggle');
-            menuToggle.classList.toggle('active')
-            menu.classList.toggle('active')
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
         }
     </script>
 </body>
